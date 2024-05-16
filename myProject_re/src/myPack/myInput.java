@@ -1,23 +1,23 @@
 package myPack;
 import javax.swing.JOptionPane;
-// ½ÇÇà ´ÜÃàÅ°: ctrl + f11
+// ì‹¤í–‰ ë‹¨ì¶•í‚¤: ctrl + f11
 public class myInput {
 
 	public static void main(String[] args) {
-		// Ã¹¹øÂ° ÀÔ·ÂÇÑ ¼ıÀÚ¸¦ ´ã´Â º¯¼ö
+		// ì²«ë²ˆì§¸ ì…ë ¥í•œ ìˆ«ìë¥¼ ë‹´ëŠ” ë³€ìˆ˜
 		int num1;
-		
-		// µÎ¹øÂ° ÀÔ·ÂÇÑ ¼ıÀÚ¸¦ ´ã´Â º¯¼ö
+
+		// ë‘ë²ˆì§¸ ì…ë ¥í•œ ìˆ«ìë¥¼ ë‹´ëŠ” ë³€ìˆ˜
 		int num2;
-		
-		num1 = Integer.parseInt(JOptionPane.showInputDialog("Ã¹¹øÂ° ¼ıÀÚ ÀÔ·Â:"));
-		System.out.println("Ã¹¹øÂ° ¼ıÀÚ: " + num1);
-		num2 = Integer.parseInt(JOptionPane.showInputDialog("µÎ¹øÂ° ¼ıÀÚ ÀÔ·Â:"));
-		System.out.println("µÎ¹øÂ° ¼ıÀÚ: " + num2);
-		
-		System.out.print("ÇÕ: ");
+
+		num1 = Integer.parseInt(JOptionPane.showInputDialog("ì²«ë²ˆì§¸ ìˆ«ì ì…ë ¥:"));
+		System.out.println("ì²«ë²ˆì§¸ ìˆ«ì: " + num1);
+		num2 = Integer.parseInt(JOptionPane.showInputDialog("ë‘ë²ˆì§¸ ìˆ«ì ì…ë ¥:"));
+		System.out.println("ë‘ë²ˆì§¸ ìˆ«ì: " + num2);
+
+		System.out.print("í•©: ");
 		System.out.println(num1 + num2);
-		
+
 		JOptionPane.showMessageDialog(null, num1 + num2);
 	}
 

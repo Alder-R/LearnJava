@@ -3,16 +3,16 @@ package myGUI2;
 import java.awt.*;
 
 public class MyLayout extends Frame{
-	
-	public MyLayout() {		// »ı¼ºÀÚ
-		super("À©µµ¿ì Á¦¸ñ");
+
+	public MyLayout() {		// ìƒì„±ì
+		super("ìœˆë„ìš° ì œëª©");
 		Panel p = new Panel();
-		Checkbox cb1 = new Checkbox("º½");
-		Checkbox cb2 = new Checkbox("¿©¸§");
-		Checkbox cb3 = new Checkbox("°¡À»");
-		Checkbox cb4 = new Checkbox("°Ü¿ï", true);
+		Checkbox cb1 = new Checkbox("ë´„");
+		Checkbox cb2 = new Checkbox("ì—¬ë¦„");
+		Checkbox cb3 = new Checkbox("ê°€ì„");
+		Checkbox cb4 = new Checkbox("ê²¨ìš¸", true);
 		TextArea ta = new TextArea(7,15);
-		
+
 		p.add(cb1);
 		p.add(cb2);
 		p.add(cb3);
@@ -20,12 +20,12 @@ public class MyLayout extends Frame{
 
 		add(p, BorderLayout.NORTH);
 		add(ta);
-		
+
 		setSize(350, 300);
 		setVisible(true);
 	}
 
-	public static void main(String[] args) {		// ±âº» ¸Ş¼Òµå
+	public static void main(String[] args) {		// ê¸°ë³¸ ë©”ì†Œë“œ
 		new MyLayout();
 	}
 

@@ -2,37 +2,37 @@ package myGUI;
 
 import java.awt.*;
 
-public class myFrame extends Frame {		// »ó¼Ó ¹ŞÀ½
-	
-	public myFrame() {			// »ı¼ºÀÚ
-		super("»õ Frame");		// ºÎ¸ğÀÇ »ı¼ºÀÚ È£Ãâ(Å¸ÀÌÆ² »ı¼º)
-		setLocation(500, 200);	// ¸ğ´ÏÅÍ ³» ÇÁ·¹ÀÓ Ãâ·Â À§Ä¡ ¼³Á¤
-		setSize(350, 100);		// ÇÁ·¹ÀÓ Å©±â(°¡·Î, ¼¼·Î)¼³Á¤
-		setVisible(true);		// ÇÁ·¹ÀÓÀ» º¸ÀÌ°Ô ÇÑ´Ù
+public class myFrame extends Frame {		// ìƒì† ë°›ìŒ
+
+	public myFrame() {			// ìƒì„±ì
+		super("ìƒˆ Frame");		// ë¶€ëª¨ì˜ ìƒì„±ì í˜¸ì¶œ(íƒ€ì´í‹€ ìƒì„±)
+		setLocation(500, 200);	// ëª¨ë‹ˆí„° ë‚´ í”„ë ˆì„ ì¶œë ¥ ìœ„ì¹˜ ì„¤ì •
+		setSize(350, 100);		// í”„ë ˆì„ í¬ê¸°(ê°€ë¡œ, ì„¸ë¡œ)ì„¤ì •
+		setVisible(true);		// í”„ë ˆì„ì„ ë³´ì´ê²Œ í•œë‹¤
 	}
 
-	
+
 	public static void main(String[] args) {
-		myFrame f = new myFrame();			// »ó¼Ó¹ŞÀº Å¬·¡½º È£Ãâ
-		f.setTitle("¤±¤¤¤·¤©");
-		
+		myFrame f = new myFrame();			// ìƒì†ë°›ì€ í´ë˜ìŠ¤ í˜¸ì¶œ
+		f.setTitle("ã…ã„´ã…‡ã„¹");
+
 		myFrame ff = new myFrame();
 		ff.setTitle("qwer");
 		ff.setLocation(800, 400);
-		
+
 		myFrame fff = new myFrame();
 		fff.setSize(500, 200);
 		fff.setLocation(600, 600);
 		fff.setBackground(Color.gray);
-		
+
 		myFrame ffff = new myFrame();
-		ffff.setTitle("ÆÄ¶õ Ã¢");
+		ffff.setTitle("íŒŒë€ ì°½");
 		ffff.setSize(250, 250);
 		ffff.setLocation(0, 0);
 		ffff.setBackground(Color.blue);
-		
-		 myFrame2 f2 = new myFrame2();
-		 f2.setLocation(800, 500);
+
+		myFrame2 f2 = new myFrame2();
+		f2.setLocation(800, 500);
 	}
 
 }

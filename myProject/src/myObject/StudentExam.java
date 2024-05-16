@@ -8,30 +8,30 @@ class Student {
 	public Student(String name) {this.name = name;}
 	public Student(String name, int grade) {this(name); this.grade = grade;}
 	public Student(String name, int grade, int ban) {this(name); this.grade = grade; this.ban=ban;}
-	
+
 	public void setName(String name) {this.name = name;}
 	public String getName() {return this.name;}
 	public void setGrade(int grade) {this.grade = grade;}
 	public int getGrade() {return this.grade;}
-	
-	void eating() {System.out.println("±Ş½Ä ¸Ô´Â Áß...");}
+
+	void eating() {System.out.println("ê¸‰ì‹ ë¨¹ëŠ” ì¤‘...");}
 }
 
 public class StudentExam {
 
 	public static void main(String[] args) {
-		Student kim = new Student("±èÀÌ¸§");
+		Student kim = new Student("ê¹€ì´ë¦„");
 		kim.setGrade(1);
 		kim.ban = 4;
-		Student jang = new Student("Àå¤±¤±", 3, 7);
-		Student jung = new Student("Á¤¤·¤·", 2, 8);
-		Student jun = new Student("Àü¤¤¤¤", 3, 10);
-		
-		System.out.println("ÀÌ¸§: "+kim.getName()+" \tÇĞ³â: "+kim.getGrade()+" \tÇĞ±Ş: "+kim.ban);
-		System.out.println("ÀÌ¸§: "+jang.getName()+" \tÇĞ³â: "+jang.getGrade()+" \tÇĞ±Ş: "+jang.ban);
+		Student jang = new Student("ì¥ã…ã…", 3, 7);
+		Student jung = new Student("ì •ã…‡ã…‡", 2, 8);
+		Student jun = new Student("ì „ã„´ã„´", 3, 10);
+
+		System.out.println("ì´ë¦„: "+kim.getName()+" \tí•™ë…„: "+kim.getGrade()+" \tí•™ê¸‰: "+kim.ban);
+		System.out.println("ì´ë¦„: "+jang.getName()+" \tí•™ë…„: "+jang.getGrade()+" \tí•™ê¸‰: "+jang.ban);
 		jang.eating();
-		System.out.println("ÀÌ¸§: "+jung.getName()+" \tÇĞ³â: "+jung.getGrade()+" \tÇĞ±Ş: "+jung.ban);
-		System.out.println("ÀÌ¸§: "+jun.getName()+" \tÇĞ³â: "+jun.getGrade()+" \tÇĞ±Ş: "+jun.ban);
+		System.out.println("ì´ë¦„: "+jung.getName()+" \tí•™ë…„: "+jung.getGrade()+" \tí•™ê¸‰: "+jung.ban);
+		System.out.println("ì´ë¦„: "+jun.getName()+" \tí•™ë…„: "+jun.getGrade()+" \tí•™ê¸‰: "+jun.ban);
 		jun.eating();
 	}
 

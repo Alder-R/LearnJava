@@ -3,24 +3,24 @@ package myCondition;
 public class SwitchExam {
 
 	public static void main(String[] args) {
-		
+
 		int a= 16, b = 10;
 		char op = '*';
-		
+
 		switch (op) {
-		case '+': System.out.println(a+" + "+b+" = "+(a+b)); break;
-		case '-': System.out.println(a+" - "+b+" = "+(a-b)); break;
-		case '*': System.out.println(a+" * "+b+" = "+(a*b)); break;
-		case '/': System.out.println(a+" / "+b+" = "+(a/b)); break;
-		default:  System.out.println("»çÄ¢¿¬»êÀÚ°¡ ¾Æ´Õ´Ï´Ù.");		 break;
-		}	// break¹®ÀÌ ¾øÀ¸¸é case '*'ºÎÅÍ ³¡±îÁö ½ÇÇàÇÑ´Ù.
-		
+			case '+': System.out.println(a+" + "+b+" = "+(a+b)); break;
+			case '-': System.out.println(a+" - "+b+" = "+(a-b)); break;
+			case '*': System.out.println(a+" * "+b+" = "+(a*b)); break;
+			case '/': System.out.println(a+" / "+b+" = "+(a/b)); break;
+			default:  System.out.println("ì‚¬ì¹™ì—°ì‚°ìê°€ ì•„ë‹™ë‹ˆë‹¤.");		 break;
+		}	// breakë¬¸ì´ ì—†ìœ¼ë©´ case '*'ë¶€í„° ëê¹Œì§€ ì‹¤í–‰í•œë‹¤.
+
 		switch (a%3) {
-		case 0: System.out.println(a+"Àº(´Â) 3ÀÇ ¹è¼öÀÌ´Ù"); 		break;
-		case 1:
-		case 2: System.out.println(a+"Àº(´Â) 3ÀÇ ¹è¼ö°¡ ¾Æ´Ï´Ù"); 	break;
-		}	// case 1¿¡ break°¡ ¾øÀ¸¹Ç·Î case 2ÀÇ ÄÚµå ½ÇÇà
-				
+			case 0: System.out.println(a+"ì€(ëŠ”) 3ì˜ ë°°ìˆ˜ì´ë‹¤"); 		break;
+			case 1:
+			case 2: System.out.println(a+"ì€(ëŠ”) 3ì˜ ë°°ìˆ˜ê°€ ì•„ë‹ˆë‹¤"); 	break;
+		}	// case 1ì— breakê°€ ì—†ìœ¼ë¯€ë¡œ case 2ì˜ ì½”ë“œ ì‹¤í–‰
+
 	}
 
 }

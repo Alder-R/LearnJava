@@ -4,17 +4,17 @@ package myMidTest;
 public class Test3 {
 	String name;
 	String hakbun;
-	
+
 	void startStudy() {
-		System.out.println("½ÃÇè°øºÎ¸¦ ÇÕ´Ï´Ù.");
+		System.out.println("ì‹œí—˜ê³µë¶€ë¥¼ í•©ë‹ˆë‹¤.");
 	}
 	void startEat() {
-		System.out.println("½Ä»ç¸¦ ÇÕ´Ï´Ù.");
+		System.out.println("ì‹ì‚¬ë¥¼ í•©ë‹ˆë‹¤.");
 	}
-	
+
 	public static void main(String[] args) {
 		Test3 jin = new Test3();
-		jin.name = "Áø±æµ¿";
+		jin.name = "ì§„ê¸¸ë™";
 		jin.hakbun = "10101";
 		jin.startStudy();
 		jin.startEat();

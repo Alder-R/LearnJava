@@ -16,9 +16,9 @@ public class Test1 {
 				multiple += i;
 			}
 		}
-		System.out.println("1ºÎÅÍ 50±îÁöÀÇ Â¦¼ö ÇÕ: " + even);
-		System.out.println("1ºÎÅÍ 50±îÁöÀÇ È¦¼ö ÇÕ: " + odd);
-		System.out.println("1ºÎÅÍ 50±îÁöÀÇ 5ÀÇ ¹è¼ö ÇÕ: " + multiple);
+		System.out.println("1ë¶€í„° 50ê¹Œì§€ì˜ ì§ìˆ˜ í•©: " + even);
+		System.out.println("1ë¶€í„° 50ê¹Œì§€ì˜ í™€ìˆ˜ í•©: " + odd);
+		System.out.println("1ë¶€í„° 50ê¹Œì§€ì˜ 5ì˜ ë°°ìˆ˜ í•©: " + multiple);
 	}
 
 }

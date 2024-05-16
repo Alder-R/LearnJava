@@ -3,21 +3,21 @@ package myCondition;
 public class IfExam {
 
 	public static void main(String[] args) {
-		
-		// È¦¼ö Â¦¼ö È®ÀÎ
+
+		// í™€ìˆ˜ ì§ìˆ˜ í™•ì¸
 		int a = 15;
-		if (a%2==0)	System.out.println(a + "Àº(´Â) Â¦¼ö");
-		else 		System.out.println(a + "Àº(´Â) È¦¼ö");
-		
-		// 5ÀÇ ¹è¼ö È®ÀÎ
+		if (a%2==0)	System.out.println(a + "ì€(ëŠ”) ì§ìˆ˜");
+		else 		System.out.println(a + "ì€(ëŠ”) í™€ìˆ˜");
+
+		// 5ì˜ ë°°ìˆ˜ í™•ì¸
 		int b = 27;
-		if (b%5==0)	System.out.println(b + "Àº(´Â) 5ÀÇ ¹è¼öÀÌ´Ù");
-		else 		System.out.println(b + "Àº(´Â) 5ÀÇ ¹è¼ö°¡ ¾Æ´Ï´Ù");
-		
-		// nÀÇ ¹è¼ö È®ÀÎ
+		if (b%5==0)	System.out.println(b + "ì€(ëŠ”) 5ì˜ ë°°ìˆ˜ì´ë‹¤");
+		else 		System.out.println(b + "ì€(ëŠ”) 5ì˜ ë°°ìˆ˜ê°€ ì•„ë‹ˆë‹¤");
+
+		// nì˜ ë°°ìˆ˜ í™•ì¸
 		int c = 12, d = 3;
-		if (c%d==0)	System.out.println(c+"Àº(´Â) "+d+"ÀÇ ¹è¼öÀÌ´Ù");
-		else		System.out.println(c+"Àº(´Â) "+d+"ÀÇ ¹è¼ö°¡ ¾Æ´Ï´Ù");
-		
+		if (c%d==0)	System.out.println(c+"ì€(ëŠ”) "+d+"ì˜ ë°°ìˆ˜ì´ë‹¤");
+		else		System.out.println(c+"ì€(ëŠ”) "+d+"ì˜ ë°°ìˆ˜ê°€ ì•„ë‹ˆë‹¤");
+
 	}
 }

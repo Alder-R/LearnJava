@@ -3,70 +3,70 @@ package myGUI;
 import java.awt.*;
 
 public class myFrame2 extends Frame {
-	
+
 	public myFrame2() {
-		super("»õ Frame2(Panel)");		// Å¸ÀÌÆ² »ı¼º
+		super("ìƒˆ Frame2(Panel)");		// íƒ€ì´í‹€ ìƒì„±
 		setSize(600, 80);
-		// Panel »ı¼º: Panel Å¬·¡½ºÀÇ Æ¯Â¡ - È¥ÀÚ¼­ ½ÇÇà ºÒ°¡, Frame °°Àº ÄÁÅ×ÀÌ³Ê¿¡ Æ÷ÇÔµÇ¾î¾ß ÇÔ
-		Panel p = new Panel();			// Panel »ı¼º
-		p.setBackground(Color.yellow);	// Panel »ö»ó º¯°æ
-		add(p);							// PanelÀ» Frame¿¡ ºÙÀÓ (ÇÊ¼ö)
-		
-		// ¹öÆ° »ı¼º
-		Button b1 = new Button();		// ºñ¾î ÀÖ´Â ¹öÆ° °´Ã¼ »ı¼º
-		b1.setLabel("¹öÆ°1");				// b1¿¡ Label ³Ö±â
-		Button b2 = new Button("Á¾·á");	// Label ÀÖ´Â ¹öÆ° °´Ã¼ »ı¼º
+		// Panel ìƒì„±: Panel í´ë˜ìŠ¤ì˜ íŠ¹ì§• - í˜¼ìì„œ ì‹¤í–‰ ë¶ˆê°€, Frame ê°™ì€ ì»¨í…Œì´ë„ˆì— í¬í•¨ë˜ì–´ì•¼ í•¨
+		Panel p = new Panel();			// Panel ìƒì„±
+		p.setBackground(Color.yellow);	// Panel ìƒ‰ìƒ ë³€ê²½
+		add(p);							// Panelì„ Frameì— ë¶™ì„ (í•„ìˆ˜)
+
+		// ë²„íŠ¼ ìƒì„±
+		Button b1 = new Button();		// ë¹„ì–´ ìˆëŠ” ë²„íŠ¼ ê°ì²´ ìƒì„±
+		b1.setLabel("ë²„íŠ¼1");				// b1ì— Label ë„£ê¸°
+		Button b2 = new Button("ì¢…ë£Œ");	// Label ìˆëŠ” ë²„íŠ¼ ê°ì²´ ìƒì„±
 		p.add(b1);
 		p.add(b2);
-		
-		// Ã¼Å©¹Ú½º »ı¼º (º¹¼ö ¼±ÅÃ °¡´É)
-		Checkbox ck1 = new Checkbox();				// Ã¼Å©¹Ú½º »ı¼º
-		ck1.setLabel("»ç°ú");							// ck1¿¡ Label ³Ö±â
-		Checkbox ck2 = new Checkbox("µş±â", true);	// ¼±ÅÃµÈ Ã¼Å©¹Ú½º »ı¼º
-		Checkbox ck3 = new Checkbox("¹Ù³ª³ª", false);
+
+		// ì²´í¬ë°•ìŠ¤ ìƒì„± (ë³µìˆ˜ ì„ íƒ ê°€ëŠ¥)
+		Checkbox ck1 = new Checkbox();				// ì²´í¬ë°•ìŠ¤ ìƒì„±
+		ck1.setLabel("ì‚¬ê³¼");							// ck1ì— Label ë„£ê¸°
+		Checkbox ck2 = new Checkbox("ë”¸ê¸°", true);	// ì„ íƒëœ ì²´í¬ë°•ìŠ¤ ìƒì„±
+		Checkbox ck3 = new Checkbox("ë°”ë‚˜ë‚˜", false);
 		p.add(ck1);
 		p.add(ck2);
 		p.add(ck3);
-		
-		// ¶óµğ¿À¹öÆ° »ı¼º (º¹¼ö ¼±ÅÃ ºÒ°¡´É, ±×·ì Áß¿¡¼­ ÇÏ³ª¸¸)
-		CheckboxGroup g = new CheckboxGroup();		// Ã¼Å©¹Ú½º¸¦ ±×·ìÀ¸·Î ¹­À½
-		Checkbox ra1 = new Checkbox("³²¼º",g,true);	// ±âº» ¼±ÅÃµÊ
-		Checkbox ra2 = new Checkbox("¿©¼º",false,g);
+
+		// ë¼ë””ì˜¤ë²„íŠ¼ ìƒì„± (ë³µìˆ˜ ì„ íƒ ë¶ˆê°€ëŠ¥, ê·¸ë£¹ ì¤‘ì—ì„œ í•˜ë‚˜ë§Œ)
+		CheckboxGroup g = new CheckboxGroup();		// ì²´í¬ë°•ìŠ¤ë¥¼ ê·¸ë£¹ìœ¼ë¡œ ë¬¶ìŒ
+		Checkbox ra1 = new Checkbox("ë‚¨ì„±",g,true);	// ê¸°ë³¸ ì„ íƒë¨
+		Checkbox ra2 = new Checkbox("ì—¬ì„±",false,g);
 		p.add(ra1);
 		p.add(ra2);
-		
-		// ¶óº§(·¹ÀÌºí) »ı¼º
-		Label la1 = new Label("·¹ÀÌºí1");
-		Label la2 = new Label("·¹ÀÌºí2", Label.CENTER);	// °¡¿îµ¥ Á¤·Ä
+
+		// ë¼ë²¨(ë ˆì´ë¸”) ìƒì„±
+		Label la1 = new Label("ë ˆì´ë¸”1");
+		Label la2 = new Label("ë ˆì´ë¸”2", Label.CENTER);	// ê°€ìš´ë° ì •ë ¬
 		la1.setBackground(Color.red);
 		la2.setBackground(Color.cyan);
 		p.add(la1);
 		p.add(la2);
-		
-		// ÃÊÀÌ½º »ı¼º (µå·Ó ´Ù¿î ¸®½ºÆ® ÇüÅÂ)
+
+		// ì´ˆì´ìŠ¤ ìƒì„± (ë“œë¡­ ë‹¤ìš´ ë¦¬ìŠ¤íŠ¸ í˜•íƒœ)
 		Choice ch = new Choice();
-		ch.addItem("º½");
-		ch.addItem("¿©¸§");
-		ch.addItem("°¡À»");
-		ch.addItem("°Ü¿ï");
+		ch.addItem("ë´„");
+		ch.addItem("ì—¬ë¦„");
+		ch.addItem("ê°€ì„");
+		ch.addItem("ê²¨ìš¸");
 		p.add(ch);
-		// ¹İº¹¹® È°¿ëÇÏ¿© ÃÊÀÌ½º »ı¼º
+		// ë°˜ë³µë¬¸ í™œìš©í•˜ì—¬ ì´ˆì´ìŠ¤ ìƒì„±
 		Choice chDay = new Choice();
 		for (int i=1; i<=31; i++) {
 			chDay.addItem(Integer.toString(i));
 		}
 		p.add(chDay);
-		
+
 		setVisible(true);
 	}
-	
-	
+
+
 	public static void main(String[] args) {
 		new myFrame2();
 		new myFrame();
-		
+
 		myFrame2 ff2 = new myFrame2();
-		ff2.setBackground(Color.red);	// Panel»ö Yellow¿¡ °¡·ÁÁü
+		ff2.setBackground(Color.red);	// Panelìƒ‰ Yellowì— ê°€ë ¤ì§
 		ff2.setSize(400, 200);
 		ff2.setLocation(600, 400);
 		ff2.setTitle("ff2(Panel)");

@@ -5,53 +5,53 @@ import java.awt.*;
 public class ChoiceExam extends Frame{
 
 	public ChoiceExam() {
-		super("Choice Å×½ºÆ®");			// Ã¢ ÀÌ¸§
-		setSize(400, 300);				// Ã¢ Å©±â
-		setLocation(1000, 250);			// Ã¢ À§Ä¡
-		Panel p = new Panel();			// Panel »ı¼º
-		p.setBackground(Color.white);	// Panel »ö»ó º¯°æ
-		
-		// °èÀı ¼±ÅÃ(º½, ¿©¸§, °¡À», °Ü¿ï)
-		Choice ch = new Choice();		// Choice °´Ã¼ »ı¼º
-		// Ç×¸ñ Ãß°¡
-		ch.addItem("º½");
-		ch.addItem("¿©¸§");
-		ch.addItem("°¡À»");
-		ch.addItem("°Ü¿ï");
-		p.add(ch);				// Panel¿¡ Choice ºÙÀÌ±â
-		add(p);					// ÇÁ·¹ÀÓ¿¡ Panel ºÙÀÌ±â
-		
-		Label la1 = new Label("¿ù", Label.RIGHT);
+		super("Choice í…ŒìŠ¤íŠ¸");			// ì°½ ì´ë¦„
+		setSize(400, 300);				// ì°½ í¬ê¸°
+		setLocation(1000, 250);			// ì°½ ìœ„ì¹˜
+		Panel p = new Panel();			// Panel ìƒì„±
+		p.setBackground(Color.white);	// Panel ìƒ‰ìƒ ë³€ê²½
+
+		// ê³„ì ˆ ì„ íƒ(ë´„, ì—¬ë¦„, ê°€ì„, ê²¨ìš¸)
+		Choice ch = new Choice();		// Choice ê°ì²´ ìƒì„±
+		// í•­ëª© ì¶”ê°€
+		ch.addItem("ë´„");
+		ch.addItem("ì—¬ë¦„");
+		ch.addItem("ê°€ì„");
+		ch.addItem("ê²¨ìš¸");
+		p.add(ch);				// Panelì— Choice ë¶™ì´ê¸°
+		add(p);					// í”„ë ˆì„ì— Panel ë¶™ì´ê¸°
+
+		Label la1 = new Label("ì›”", Label.RIGHT);
 		p.add(la1);
-		// ¿ù ¼±ÅÃ(1~12)
+		// ì›” ì„ íƒ(1~12)
 		Choice chMonth = new Choice();
 		for (int i=1; i<=12; i++) {
 			chMonth.addItem(Integer.toString(i));
 		}
 		p.add(chMonth);
-		Label la2 = new Label("ÀÏ", Label.RIGHT);
+		Label la2 = new Label("ì¼", Label.RIGHT);
 		p.add(la2);
-		// ÀÏ ¼±ÅÃ(1~31)
+		// ì¼ ì„ íƒ(1~31)
 		Choice chDay = new Choice();
 		for (int i=1; i<=31; i++) {
 			chDay.addItem(Integer.toString(i));
 		}
 		p.add(chDay);
-		
-		// ¿äÀÏ ¸®½ºÆ®
-		List list1 = new List(5, true);		// 5°³ Ç×¸ñ º¸¿©ÁÜ, ´ÙÁß ¼±ÅÃ true
-		list1.add("¿ù");
-		list1.add("È­");
-		list1.add("¼ö");
-		list1.add("¸ñ");
-		list1.add("±İ");
-		list1.add("Åä");
-		list1.add("ÀÏ");
+
+		// ìš”ì¼ ë¦¬ìŠ¤íŠ¸
+		List list1 = new List(5, true);		// 5ê°œ í•­ëª© ë³´ì—¬ì¤Œ, ë‹¤ì¤‘ ì„ íƒ true
+		list1.add("ì›”");
+		list1.add("í™”");
+		list1.add("ìˆ˜");
+		list1.add("ëª©");
+		list1.add("ê¸ˆ");
+		list1.add("í† ");
+		list1.add("ì¼");
 		p.add(list1);
-		
-		// ÅØ½ºÆ® ÀÔ·Â
-		//  TODO ÄÄÆ÷³ÍÆ® À§Ä¡ º¯°æ ÇÊ¿ä
-		TextField tf1 = new TextField("¾ÆÀÌµğ",20);
+
+		// í…ìŠ¤íŠ¸ ì…ë ¥
+		//  TODO ì»´í¬ë„ŒíŠ¸ ìœ„ì¹˜ ë³€ê²½ í•„ìš”
+		TextField tf1 = new TextField("ì•„ì´ë””",20);
 		TextField tf2 = new TextField(20);
 		tf1.selectAll();
 		tf2.setEchoChar('*');
@@ -62,9 +62,9 @@ public class ChoiceExam extends Frame{
 		p.add(la4);
 		p.add(tf2);
 
-		setVisible(true);		// Ã¢ º¸ÀÌ°Ô
+		setVisible(true);		// ì°½ ë³´ì´ê²Œ
 	}
-	
+
 	public static void main(String[] args) {
 		new ChoiceExam();
 	}

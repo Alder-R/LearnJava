@@ -1,45 +1,45 @@
 package myClass;
 
 class Student {
-	// »ı¼ºÀÚ(¾øÀ¸¸é ÀÚµ¿À¸·Î JVM¿¡¼­ ±âº» »ı¼ºÀÚ¸¦ »ğÀÔ, Á¢±Ù Á¦¾îÀÚ »ç¿ë °¡´É)
-	Student() {}		// ±âº» »ı¼ºÀÚ
-	Student(int ban) {	// ´ÙÇü¼º: ¿À¹ö·Îµù			// ¸Å°³ º¯¼ö 1°³ »ç¿ë
+	// ìƒì„±ì(ì—†ìœ¼ë©´ ìë™ìœ¼ë¡œ JVMì—ì„œ ê¸°ë³¸ ìƒì„±ìë¥¼ ì‚½ì…, ì ‘ê·¼ ì œì–´ì ì‚¬ìš© ê°€ëŠ¥)
+	Student() {}		// ê¸°ë³¸ ìƒì„±ì
+	Student(int ban) {	// ë‹¤í˜•ì„±: ì˜¤ë²„ë¡œë”©			// ë§¤ê°œ ë³€ìˆ˜ 1ê°œ ì‚¬ìš©
 		this.ban = ban;
 	}
-	Student(String name, int grade, int ban) {	// ¸Å°³ º¯¼ö 3°³ »ç¿ë
+	Student(String name, int grade, int ban) {	// ë§¤ê°œ ë³€ìˆ˜ 3ê°œ ì‚¬ìš©
 		this.name = name;
 		this.grade = grade;
 		this.ban = ban;
 	}
-	
-	// ¸â¹ö º¯¼ö (Á¤Àû Æ¯¼º)
-	String name;		// ÀÌ¸§
-	int grade;			// ÇĞ³â
-	int ban;			// ¹İ
-	String phoneNum;	// ÀüÈ­¹øÈ£
-	
-	// ¸Ş¼Òµå
-	void studentOutput() { System.out.println("ÀÌ¸§: " + name + ", ÇĞ³â: " + grade + ", ¹İ: " + ban); }
-	void study() { System.out.println("\t°øºÎÇÏ´Â Áß"); }
+
+	// ë©¤ë²„ ë³€ìˆ˜ (ì •ì  íŠ¹ì„±)
+	String name;		// ì´ë¦„
+	int grade;			// í•™ë…„
+	int ban;			// ë°˜
+	String phoneNum;	// ì „í™”ë²ˆí˜¸
+
+	// ë©”ì†Œë“œ
+	void studentOutput() { System.out.println("ì´ë¦„: " + name + ", í•™ë…„: " + grade + ", ë°˜: " + ban); }
+	void study() { System.out.println("\tê³µë¶€í•˜ëŠ” ì¤‘"); }
 }
 
-class MyStudent {	// class ÀÌ¸§°ú µ¿ÀÏ -> ½ÇÇà
+class MyStudent {	// class ì´ë¦„ê³¼ ë™ì¼ -> ì‹¤í–‰
 
 	public static void main(String[] args) {
-		// °´Ã¼ »ı¼º(Å¬·¡½º·ÎºÎÅÍ)
+		// ê°ì²´ ìƒì„±(í´ë˜ìŠ¤ë¡œë¶€í„°)
 		Student kimdh = new Student();
 		Student choijh = new Student(5);
-		Student asdf = new Student("¤±¤¤¤·¤©", 1, 9);
-		
-		kimdh.name = "±èÀÌ¸§";
+		Student asdf = new Student("ã…ã„´ã…‡ã„¹", 1, 9);
+
+		kimdh.name = "ê¹€ì´ë¦„";
 		kimdh.grade = 2;
 		kimdh.ban = 7;
 		kimdh.studentOutput();
 		kimdh.study();
-		
-		choijh.name = "ÃÖ¼º¸í";
+
+		choijh.name = "ìµœì„±ëª…";
 		choijh.studentOutput();
-		
+
 		asdf.studentOutput();
 		asdf.study();
 	}

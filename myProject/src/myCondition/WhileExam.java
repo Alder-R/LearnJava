@@ -3,31 +3,31 @@ package myCondition;
 public class WhileExam {
 
 	public static void main(String[] args) {
-		
+
 		int i = 1;
 		while (i <= 10) {
 			System.out.println(i);
 			i++;
 		}
-		
+
 		int j = 1, sum = 0;
 		while (sum < 100) {
 			sum += j;
 			j++;
 			System.out.println("sum: " + sum);
 		}
-		
-		// do ~ while¹®
+
+		// do ~ whileë¬¸
 		int k = 5;
 		do {
 			System.out.println(k);
 			k++;
 		} while (k > 10);
-		
-		// break¹®: ÀÚ¹Ù ÇÁ·Î±×·¡¹Ö ±³Àç 47ÂÊ
-		// continue¹®: ÀÚ¹Ù ÇÁ·Î±×·¡¹Ö ±³Àç 48ÂÊ
-		
-		// 50ÂÊ Á¾ÇÕ¹®Á¦ 6¹ø
+
+		// breakë¬¸: ìë°” í”„ë¡œê·¸ë˜ë° êµì¬ 47ìª½
+		// continueë¬¸: ìë°” í”„ë¡œê·¸ë˜ë° êµì¬ 48ìª½
+
+		// 50ìª½ ì¢…í•©ë¬¸ì œ 6ë²ˆ
 		int n = 1;
 		for (int a = 1; a <= 3; a++) {
 			for (int b = 1; b <= 3; b++) {

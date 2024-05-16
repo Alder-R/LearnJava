@@ -5,16 +5,16 @@ import javax.swing.JOptionPane;
 public class myInput2 {
 
 	public static void main(String[] args) {
-		// µµÀü°úÁ¦
-		// ÀÔ·Â´ëÈ­Ã¢: PC °¡°İ ÀÔ·Â, ÇÒÀÎÀ²
-		// Ãâ·Â´ëÈ­Ã¢: ÇÒÀÎÀÌ µÈ PC °¡°İ
+		// ë„ì „ê³¼ì œ
+		// ì…ë ¥ëŒ€í™”ì°½: PC ê°€ê²© ì…ë ¥, í• ì¸ìœ¨
+		// ì¶œë ¥ëŒ€í™”ì°½: í• ì¸ì´ ëœ PC ê°€ê²©
 		float pcPrice, discountRate;
-		
-		pcPrice = Float.parseFloat(JOptionPane.showInputDialog("PC °¡°İ ÀÔ·Â:"));
-		discountRate = Float.parseFloat(JOptionPane.showInputDialog("ÇÒÀÎÀ²(%) ÀÔ·Â:"));
-		
+
+		pcPrice = Float.parseFloat(JOptionPane.showInputDialog("PC ê°€ê²© ì…ë ¥:"));
+		discountRate = Float.parseFloat(JOptionPane.showInputDialog("í• ì¸ìœ¨(%) ì…ë ¥:"));
+
 		float discountedPrices = pcPrice - pcPrice * discountRate/100;
-		JOptionPane.showMessageDialog(null, "ÇÒÀÎÀÌ µÈ PC °¡°İ: \n" + discountedPrices);
+		JOptionPane.showMessageDialog(null, "í• ì¸ì´ ëœ PC ê°€ê²©: \n" + discountedPrices);
 	}
 
 }

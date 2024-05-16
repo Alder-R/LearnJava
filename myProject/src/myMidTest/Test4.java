@@ -3,7 +3,7 @@ package myMidTest;
 public class Test4 {
 
 	public static void main(String[] args) {
-		String[][] fruit = {{"µş±â","Æ÷µµ"},{"º¹¼ş¾Æ","¹è"},{"Âü¿Ü","»ç°ú"},{"¼ö¹Ú","¿À·»Áö"}};
+		String[][] fruit = {{"ë”¸ê¸°","í¬ë„"},{"ë³µìˆ­ì•„","ë°°"},{"ì°¸ì™¸","ì‚¬ê³¼"},{"ìˆ˜ë°•","ì˜¤ë Œì§€"}};
 		for(int i=0; i<fruit.length; i++) {
 			for(int j=0; j<fruit[0].length; j++) {
 				System.out.print("\t"+fruit[i][j]);

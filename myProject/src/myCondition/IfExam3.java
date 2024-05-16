@@ -3,23 +3,23 @@ package myCondition;
 public class IfExam3 {
 
 	public static void main(String[] args) {
-		
-		// ¸í·ÉÇà ¸Å°³º¯¼ö Ãâ·Â
+
+		// ëª…ë ¹í–‰ ë§¤ê°œë³€ìˆ˜ ì¶œë ¥
 		int a = args.length;
 		int limit = 6;
-		if (a==0)	System.out.println("¸í·ÉÇà ¸Å°³º¯¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		if (a==0)	System.out.println("ëª…ë ¹í–‰ ë§¤ê°œë³€ìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš”");
 		else if (a<limit) {
-			System.out.printf("ÀÔ·ÂµÈ ¸í·ÉÇà ¸Å°³º¯¼ö´Â \t");
+			System.out.printf("ìž…ë ¥ëœ ëª…ë ¹í–‰ ë§¤ê°œë³€ìˆ˜ëŠ” \t");
 			for (int i=0; i<a; i++) {
 				System.out.printf(args[i]);
 				if (i+1 != a) {
 					System.out.printf(",\t");
 				}
 			}
-			System.out.println("\t ÀÔ´Ï´Ù.");
+			System.out.println("\t ìž…ë‹ˆë‹¤.");
 		}
-		else System.out.println("¸í·ÉÇà ¸Å°³º¯¼ö´Â " + limit + "°³±îÁö¸¸ ÀÔ·Â °¡´ÉÇÕ´Ï´Ù.");
-		
+		else System.out.println("ëª…ë ¹í–‰ ë§¤ê°œë³€ìˆ˜ëŠ” " + limit + "ê°œê¹Œì§€ë§Œ ìž…ë ¥ ê°€ëŠ¥í•©ë‹ˆë‹¤.");
+
 	}
 
 }

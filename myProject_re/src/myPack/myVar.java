@@ -5,28 +5,28 @@ public class myVar {
 
 	public static void main(String[] args) {
 		int ablc2;
-		double abc_$; // Æ¯¹®Àº _ ¿Í $ ¸¸
+		double abc_$; // íŠ¹ë¬¸ì€ _ ì™€ $ ë§Œ
 		char A;
-		char a; // ´ë¼Ò¹®ÀÚ ±¸ºĞ
-		int todayIsSunnyDaySoIAmHappy; // º¯¼ö¸í ±ÛÀÚ¼ö Á¦ÇÑ ¾øÀ½
+		char a; // ëŒ€ì†Œë¬¸ì êµ¬ë¶„
+		int todayIsSunnyDaySoIAmHappy; // ë³€ìˆ˜ëª… ê¸€ììˆ˜ ì œí•œ ì—†ìŒ
 		boolean b1 = true;
 		boolean b2 = false;
-		
-		float f1 = 3.141592f; // ³¡¿¡ f ºÙÀÌ±â
-		double d = 1.56; // f ¾øÀ½
-		
-		char e = '±è'; // ÀÚ·áÇü(data type)ÀÓ
-		String f = "±èÀÌ¸§"; // classÀÓ
+
+		float f1 = 3.141592f; // ëì— f ë¶™ì´ê¸°
+		double d = 1.56; // f ì—†ìŒ
+
+		char e = 'ê¹€'; // ìë£Œí˜•(data type)ì„
+		String f = "ê¹€ì´ë¦„"; // classì„
 	}
 
 }
 
 
 class a {
-	
+
 }
 
 
 class b {
-	
+
 }

@@ -3,59 +3,59 @@ package myCondition;
 public class ForExam {
 
 	public static void main(String[] args) {
-		
-		// ¿¹Á¦ 1-27 º¯Çü
+
+		// ì˜ˆì œ 1-27 ë³€í˜•
 		int evenSum = 0, oddSum = 0;
 		for (int i=1; i<=20; i++)
 			if (i%2==0) evenSum += i;
 			else oddSum += i;
-		System.out.println("1ºÎÅÍ 20±îÁöÀÇ Â¦¼ö ÇÕÀº " + evenSum + "ÀÌ°í, " +
-									 "È¦¼ö ÇÕÀº " + oddSum + "ÀÔ´Ï´Ù.");
-		
-		// ¿¹Á¦ 1-29 º¯Çü
+		System.out.println("1ë¶€í„° 20ê¹Œì§€ì˜ ì§ìˆ˜ í•©ì€ " + evenSum + "ì´ê³ , " +
+				"í™€ìˆ˜ í•©ì€ " + oddSum + "ìž…ë‹ˆë‹¤.");
+
+		// ì˜ˆì œ 1-29 ë³€í˜•
 		for (int i=1; i<=5; i++) {
-			for (int j=1; j<=5; j++) 
+			for (int j=1; j<=5; j++)
 				System.out.print(i+"\t");	// tab
-			System.out.print("\n");			// new line: ÁÙ¹Ù²Þ(°³Çà)
+			System.out.print("\n");			// new line: ì¤„ë°”ê¿ˆ(ê°œí–‰)
 		}
-		
-		// ¿¹Á¦ 1-30
+
+		// ì˜ˆì œ 1-30
 		for (int i=1; i<=5; i++) {
-			for (int j=1; j<=i; j++) 
+			for (int j=1; j<=i; j++)
 				System.out.print(j+"\t");	// tab
-			System.out.print("\n");			// new line: ÁÙ¹Ù²Þ(°³Çà)
+			System.out.print("\n");			// new line: ì¤„ë°”ê¿ˆ(ê°œí–‰)
 		}
-		
+
 		System.out.println("----------------");
-		// µµÀü°úÁ¦1 (¿¹Á¦ 1-31 ÂüÁ¶)
+		// ë„ì „ê³¼ì œ1 (ì˜ˆì œ 1-31 ì°¸ì¡°)
 		for (int i=1; i<=4; i++) {
-			for (int j=1; j<=i; j++) 
+			for (int j=1; j<=i; j++)
 				System.out.print("*\t");
 			System.out.println();
 		}
-		
+
 		System.out.println("----------------");
-		// µµÀü°úÁ¦2 (¿¹Á¦ 1-32 ÂüÁ¶)
+		// ë„ì „ê³¼ì œ2 (ì˜ˆì œ 1-32 ì°¸ì¡°)
 		for (int i=5; i>=1; i--) {
-			for (int j=1; j<=i; j++) 
+			for (int j=1; j<=i; j++)
 				System.out.print("*\t");
 			System.out.println();
 		}
-		
+
 		System.out.println("----------------");
-		// µµÀü°úÁ¦3 (À§ µÑ ÂüÁ¶)
+		// ë„ì „ê³¼ì œ3 (ìœ„ ë‘˜ ì°¸ì¡°)
 		for (int i=1; i<=3; i++) {
-			for (int j=1; j<=i; j++) 
+			for (int j=1; j<=i; j++)
 				System.out.print("*\t");
 			System.out.println();
 		}
 		for (int i=3; i>=1; i--) {
-			for (int j=1; j<=i; j++) 
+			for (int j=1; j<=i; j++)
 				System.out.print("*\t");
 			System.out.println();
 		}
-		
-		
+
+
 	}
 
 }

@@ -2,51 +2,51 @@
 package myOpPack;
 
 public class MyOperation {
-	
+
 	public static void main(String[] args) {
-		
-		// 1. »ê¼ú ¿¬»êÀÚ		+ - * / %
+
+		// 1. ì‚°ìˆ  ì—°ì‚°ì		+ - * / %
 		int a = 50; int b = 10;
-		System.out.println("--- 1. »ê¼ú ¿¬»êÀÚ  ---");
+		System.out.println("--- 1. ì‚°ìˆ  ì—°ì‚°ì  ---");
 		System.out.println(a/b);  // 5
 		System.out.println(a%b);  // 0
-		
-		// 2. °ü°è(ºñ±³) ¿¬»êÀÚ	> >= < <= == !=
-		System.out.println("--- 2. °ü°è(ºñ±³) ¿¬»êÀÚ  ---");
+
+		// 2. ê´€ê³„(ë¹„êµ) ì—°ì‚°ì	> >= < <= == !=
+		System.out.println("--- 2. ê´€ê³„(ë¹„êµ) ì—°ì‚°ì  ---");
 		System.out.println(a>b);		// true
 		System.out.println(a==b);		// false
 		System.out.println(!(a!=b));	// false
-		
-		// 3. ³í¸® ¿¬»êÀÚ		& && | || !
-		System.out.println("--- 3. ³í¸® ¿¬»êÀÚ  ---");
+
+		// 3. ë…¼ë¦¬ ì—°ì‚°ì		& && | || !
+		System.out.println("--- 3. ë…¼ë¦¬ ì—°ì‚°ì  ---");
 		System.out.println((a>=b)&&(a!=b));		// true
 		System.out.println((a>=b)&(a!=b));		// true
 		System.out.println(!(a>=b)|(a!=b));		// true
-		
-		// 4. Áõ°¨(Áõ°¡/°¨¼Ò) ¿¬»êÀÚ	++ --
-		// ÀüÀ§Çü°ú ÈÄÀ§Çü ±¸º°ÇÏ±â
+
+		// 4. ì¦ê°(ì¦ê°€/ê°ì†Œ) ì—°ì‚°ì	++ --
+		// ì „ìœ„í˜•ê³¼ í›„ìœ„í˜• êµ¬ë³„í•˜ê¸°
 		int c = 15;
-		System.out.println("--- 4. Áõ°¨(Áõ°¡/°¨¼Ò) ¿¬»êÀÚ  ---");
+		System.out.println("--- 4. ì¦ê°(ì¦ê°€/ê°ì†Œ) ì—°ì‚°ì  ---");
 		int d = ++c +5;
 		System.out.println(d);		// 21
 		int e = c-- + 5;
 		System.out.println(e);		// 21
 		System.out.println(c);		// 15
-		
-		// 5. ºñÆ® ¿¬»êÀÚ		& | ^ ~ >> << >>>
-		System.out.println("--- 5. ºñÆ® ¿¬»êÀÚ  ---");
-		System.out.println("±³Àç(ÇÁ·Î±×·¡¹Ö(JAVA))33p");
-		
-		// 6. ´ëÀÔ ¿¬»êÀÚ		= += -= *= /= %=
-		System.out.println("--- 6. ´ëÀÔ ¿¬»êÀÚ  ---");
-		System.out.println("±³Àç(ÇÁ·Î±×·¡¹Ö(JAVA))34p");
-		
-		// 7. Á¶°Ç(»ïÇ×) ¿¬»êÀÚ 	?:
-		// Á¶°Ç ? Ã³¸®1(Á¶°ÇÀÌ ÂüÀÏ¶§) : Ã³¸®2(Á¶°ÇÀÌ °ÅÁşÀÏ¶§)
-		System.out.println("--- 7. Á¶°Ç ¿¬»êÀÚ (»ïÇ× ¿¬»êÀÚ) ---");
+
+		// 5. ë¹„íŠ¸ ì—°ì‚°ì		& | ^ ~ >> << >>>
+		System.out.println("--- 5. ë¹„íŠ¸ ì—°ì‚°ì  ---");
+		System.out.println("êµì¬(í”„ë¡œê·¸ë˜ë°(JAVA))33p");
+
+		// 6. ëŒ€ì… ì—°ì‚°ì		= += -= *= /= %=
+		System.out.println("--- 6. ëŒ€ì… ì—°ì‚°ì  ---");
+		System.out.println("êµì¬(í”„ë¡œê·¸ë˜ë°(JAVA))34p");
+
+		// 7. ì¡°ê±´(ì‚¼í•­) ì—°ì‚°ì 	?:
+		// ì¡°ê±´ ? ì²˜ë¦¬1(ì¡°ê±´ì´ ì°¸ì¼ë•Œ) : ì²˜ë¦¬2(ì¡°ê±´ì´ ê±°ì§“ì¼ë•Œ)
+		System.out.println("--- 7. ì¡°ê±´ ì—°ì‚°ì (ì‚¼í•­ ì—°ì‚°ì) ---");
 		int result = (5 != 4) ? 1 : 0;
 		System.out.println(result);
-		
+
 	}
 
 }
