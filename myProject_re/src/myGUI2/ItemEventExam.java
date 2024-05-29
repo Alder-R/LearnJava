@@ -8,10 +8,10 @@ public class ItemEventExam extends Frame implements ItemListener, ActionListener
 	Panel pnl1 = new Panel();
 	Panel pnl2 = new Panel();
 	TextArea txta1 = new TextArea(7, 15);
-	Checkbox chk1 = new Checkbox("키위", false);
-	Checkbox chk2 = new Checkbox("사과", false);
-	Checkbox chk3 = new Checkbox("딸기", false);
-	Checkbox chk4 = new Checkbox("배", false);
+	Checkbox chk1 = new Checkbox("봄", false);
+	Checkbox chk2 = new Checkbox("여름", false);
+	Checkbox chk3 = new Checkbox("가을", false);
+	Checkbox chk4 = new Checkbox("겨울", false);
 	Button btnClose = new Button("닫기");
 	
 	public ItemEventExam() {
@@ -38,9 +38,9 @@ public class ItemEventExam extends Frame implements ItemListener, ActionListener
 	
 	public void itemStateChanged(ItemEvent itmev) {
 		if (itmev.getStateChange() == ItemEvent.SELECTED) 
-			txta1.append(itmev.getItem() + "가 선택됨\n\n");
+			txta1.append(itmev.getItem() + "이(가) 선택됨\n\n");
 		else if (itmev.getStateChange() == ItemEvent.DESELECTED) 
-			txta1.append(itmev.getItem() + "가 취소됨\n\n");		
+			txta1.append(itmev.getItem() + "이(가) 취소됨\n\n");
 	}
 	
 	
