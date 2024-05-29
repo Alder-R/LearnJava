@@ -25,7 +25,7 @@ public class Test1 extends Frame implements ActionListener{
 		
 		Label lblSpace1 = new Label("　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　");
 		Label lblSpace2 = new Label("　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　");
-		Label lblName = new Label("이  름");
+		Label lblName = new Label("이  름");		// 한글 사용시 VM Arguments에 "-Dfile.encoding=MS949" 입력
 		Label lblBirth = new Label("생  일:");
 		Label lblMonth = new Label("월");
 		Label lblDay = new Label("일");
@@ -90,7 +90,7 @@ public class Test1 extends Frame implements ActionListener{
 	}
 	
 
-	@Override
+	// @Override
 	public void actionPerformed(ActionEvent atev) {
 		if(atev.getSource()== btnComplete) System.exit(0);
 	}
