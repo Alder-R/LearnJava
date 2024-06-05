@@ -29,14 +29,14 @@ public class ActionEventExam extends Frame implements ActionListener, TextListen
 	
 	// actionPerformed 메소드에 이벤트 기능 구현
 	// @Override
-	public void actionPerformed(ActionEvent atev) {
+	public void actionPerformed(ActionEvent atEv) {
 		// 창 닫기 기능
-		if (atev.getSource() == btn1 || atev.getSource() == btn2) System.exit(0);
+		if (atEv.getSource() == btn1 || atEv.getSource() == btn2) System.exit(0);
 	}
 	
 	// @Override
-	public void textValueChanged(TextEvent txtev) {
-		if (txtev.getSource() == txtfName) System.exit(0);
+	public void textValueChanged(TextEvent txtEv) {
+		if (txtEv.getSource() == txtfName) System.exit(0);
 	}
 
 	public static void main(String[] args) {
