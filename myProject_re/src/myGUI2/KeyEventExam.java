@@ -47,16 +47,20 @@ public class KeyEventExam extends Frame implements KeyListener{
 	
 	// 문자가 입력되었을 떄 호출되는 메소드
 	public void keyTyped(KeyEvent kyEv) {
-		if (jumin1.getText().trim().length() == 2) {
+		if (jumin1.getText().trim().length() == 5) {
 			jumin2.requestFocus();		// 다음 칸으로 커서 이동
 			jumin2.setText("");
 		}
 		
 		if (jumin2.getText().trim().length() == 7) {
-			jumin1.requestFocus();
-			jumin1.setText("");
-			jumin2.setText("숫자 입력 초과");
+			KeyOver();
 		}
+	}
+	
+	public void KeyOver() {
+		jumin1.requestFocus();
+		jumin1.setText("");
+		jumin2.setText("숫자 입력 초과");
 	}
 	
 	
