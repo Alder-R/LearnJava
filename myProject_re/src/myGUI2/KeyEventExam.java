@@ -45,7 +45,7 @@ public class KeyEventExam extends Frame implements KeyListener{
 		}
 	}
 	
-	// 문자가 입력되었을 떄 호출되는 메소드
+	// 문자가 입력되었을 때 호출되는 메소드
 	public void keyTyped(KeyEvent kyEv) {
 		if (jumin1.getText().trim().length() == 5) {
 			jumin2.requestFocus();		// 다음 칸으로 커서 이동
