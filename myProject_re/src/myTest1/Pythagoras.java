@@ -3,9 +3,11 @@ package myTest1;
 public class Pythagoras {
 
 	public static void main(String[] args) {
-		double a = Math.pow(3, 2);
-		double b = Math.pow(4, 2);
-		System.out.println("거리 = " + Math.sqrt(a + b));
+		double a = 3;		// 밑변
+		double b = 4;		// 높이
+		System.out.println("밑변 = "+a+
+						"\n높이 = "+b+
+						"\n빗변  = " + Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2)));
 	}
 
 }
