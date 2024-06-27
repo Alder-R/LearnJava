@@ -7,7 +7,7 @@ public class Test1 extends Frame implements ActionListener{
 	
 	Button btnSave = new Button();
 	Button btnComplete = new Button();
-	TextArea txtaInfo = new TextArea(1, 46);
+	TextArea txtaInfo = new TextArea(2, 46);
 	
 	Choice choMonth = new Choice();
 	Choice choDay = new Choice();
@@ -29,7 +29,7 @@ public class Test1 extends Frame implements ActionListener{
 	public Test1() {
 		super("친구정보");
 		setLocation(600, 400);
-		setSize(360, 230);
+		setSize(360, 250);
 		setVisible(true);
 		setLayout(new BorderLayout());
 		
@@ -105,8 +105,8 @@ public class Test1 extends Frame implements ActionListener{
 			
 			txtaInfo.setText(" 이름: "+txtfName.getText()+
 					" / 생일: "+choMonth.getSelectedItem()+"월 "+choDay.getSelectedItem()+"일"+strSL+
-					" / 전화: "+txfePhoneNum.getText()+
-					"\n / 그룹: "+strSchool+strAcademy+strTown+strEtc); 
+					" /\n 전화: "+txfePhoneNum.getText()+
+					" / 그룹: "+strSchool+strAcademy+strTown+strEtc); 
 			};
 	}
 
