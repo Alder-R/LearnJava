@@ -29,9 +29,12 @@ public class KeyEventExam extends Frame implements KeyListener{
 	}
 	
 	// 아래 셋은 추상 메소드이므로, 사용하지 않아도 정의해야 함
-	// 키가 눌렸다가 뗴어졌을 때 호출되는 메소드
+	// 키가 눌렸다가 떼어졌을 때 호출되는 메소드
 	public void keyReleased(KeyEvent kyEv) {
-		
+		if (jumin2.getText().length() == 7) {
+			jumin2.setText("");
+			KeyOver();
+		}
 	}
 	
 	// 키가 눌렸을 때 호출되는 메소드
@@ -47,20 +50,21 @@ public class KeyEventExam extends Frame implements KeyListener{
 	
 	// 문자가 입력되었을 때 호출되는 메소드
 	public void keyTyped(KeyEvent kyEv) {
-		if (jumin1.getText().trim().length() == 5) {
+		if (jumin1.getText().length() == 5) {
 			jumin2.requestFocus();		// 다음 칸으로 커서 이동
 			jumin2.setText("");
 		}
 		
-		if (jumin2.getText().trim().length() == 7) {
+		if (jumin2.getText().length() == 7) {
+			jumin2.setText("");
 			KeyOver();
 		}
 	}
 	
 	public void KeyOver() {
 		jumin1.requestFocus();
-		jumin1.setText("");
-		jumin2.setText("숫자 입력 초과");
+		jumin1.setText(null);
+		jumin2.setText("입력 길이 초과");
 	}
 	
 	
