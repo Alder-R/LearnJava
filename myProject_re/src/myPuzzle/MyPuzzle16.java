@@ -9,6 +9,9 @@ import javax.swing.JFrame;
 
 import java.awt.Toolkit;
 import java.awt.Dimension;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class MyPuzzle16 extends JFrame implements ActionListener {
 
@@ -28,10 +31,11 @@ public class MyPuzzle16 extends JFrame implements ActionListener {
 		setLayout(new GridLayout(4, 4));
 		
 		for (int i = 0; i < btns.length; i++) {
-			add(btns[i] = i == 0 ? new JButton("") : new JButton(String.valueOf(i)));
+			add(btns[i] = i == 15 ? new JButton("") : new JButton(String.valueOf(i+1)));
 			btns[i].addActionListener(this);
 		}
-		btns[0].setEnabled(false);
+
+		btns[15].setEnabled(false);
 	}
 	
 	int[] nb = new int[4];
