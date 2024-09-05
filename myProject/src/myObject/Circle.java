@@ -1,8 +1,8 @@
 package myObject;
 
 abstract class ShapeExam {
-	public abstract double getArea();		// 면적
-	public abstract double getCircum();		// 둘레
+	abstract double getArea();		// 면적
+	abstract double getCircum();		// 둘레
 }
 
 public class Circle {
