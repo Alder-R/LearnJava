@@ -1,10 +1,10 @@
 package myObject;
 
 abstract class Ship {
-	abstract String ShipName();
-	abstract int MaxSpeed();		// 최대 속도
-	abstract int MaxPassenger();	// 최대 탑승 인원
-	abstract int MaxLuggage();		// 최대 적재량
+	abstract String shipName();
+	abstract int maxSpeed();		// 최대 속도
+	abstract int maxPassenger();	// 최대 탑승 인원
+	abstract int maxLuggage();		// 최대 적재량
 }
 
 class CargoShip extends Ship {		// 화물선
@@ -17,19 +17,19 @@ class CargoShip extends Ship {		// 화물선
 		this.maxLug = maxLug;
 	}
 	@Override
-	String ShipName() {
+	String shipName() {
 		return shipName;
 	}
 	@Override
-	int MaxSpeed() {
+	int maxSpeed() {
 		return maxSpd;
 	}
 	@Override
-	int MaxPassenger() {
+	int maxPassenger() {
 		return maxPass;
 	}
 	@Override
-	int MaxLuggage() {
+	int maxLuggage() {
 		return maxLug;
 	}
 }
@@ -37,9 +37,9 @@ public class AbstractMain{
 
 	public static void main(String[] args) {
 		CargoShip EverGiven = new CargoShip("MV Ever Given", 23, 20, 199629);
-		System.out.println(EverGiven.ShipName() + "의 최대 속도:   \t" + EverGiven.MaxSpeed() + "노트");
-		System.out.println(EverGiven.ShipName() + "의 최대 탑승 인원:\t" + EverGiven.MaxPassenger() + "명");
-		System.out.println(EverGiven.ShipName() + "의 최대 적재량:  \t" + EverGiven.MaxLuggage() + "톤");
+		System.out.println(EverGiven.shipName() + "의 최대 속도:   \t" + EverGiven.maxSpeed() + "노트");
+		System.out.println(EverGiven.shipName() + "의 최대 탑승 인원:\t" + EverGiven.maxPassenger() + "명");
+		System.out.println(EverGiven.shipName() + "의 최대 적재량:  \t" + EverGiven.maxLuggage() + "톤");
 	}
 
 }
