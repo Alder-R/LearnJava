@@ -58,7 +58,19 @@ public class MyPackClass {
 		
 		System.out.println("---\n---");
 		
-		System.out.println( myExtract("Java", 2));
+		System.out.println(myExtract("Java", 2));
+		
+		System.out.println("---\n---");
+		
+		System.out.println(hello.compareTo("Hello"));
+		System.out.println(hello.compareTo("hello"));
+		System.out.println(hello.compareTo("A"));
+		System.out.println(hello.compareTo("GoodBye"));
+		System.out.println(hello.compareTo("안녕하세요"));
+		Integer i = 10;
+		System.out.println(i.compareTo(9));
+		System.out.println(i.compareTo(10));
+		System.out.println(i.compareTo(11));
 	}
 	
 	public static char myExtract(String str, int index) {
