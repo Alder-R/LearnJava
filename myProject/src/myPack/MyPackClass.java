@@ -44,7 +44,7 @@ public class MyPackClass {
 		System.out.println(hello.charAt(5));
 		System.out.println(hello.substring(0, 6));
 		System.out.println(hello.substring(7));
-		System.out.println(hello.substring(7, hello.length()-1));
+		System.out.println(hello.substring(7, hello.length()-1));		// world 출력
 		
 		System.out.println("---\n---");
 		
@@ -54,7 +54,7 @@ public class MyPackClass {
 		hello3 = hello3.replace("i", "");
 		hello3 = hello3.replace("o", "");
 		hello3 = hello3.replace("u", "");
-		System.out.println(hello.length() - hello3.length());
+		System.out.println(hello.length() - hello3.length());		// 모음 개수 출력(3)
 		
 		System.out.println("---\n---");
 		
