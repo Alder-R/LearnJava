@@ -35,14 +35,33 @@ public class MyPackClass {
 		
 		System.out.println("---\n---");
 		
+		String hello2 = "   Hello, world!  ";
+		System.out.println(hello2.trim());
+		
+		System.out.println("---\n---");
+		
 		String hello = "Hello, world!";
 		System.out.println(hello.charAt(5));
 		System.out.println(hello.substring(0, 6));
 		System.out.println(hello.substring(7));
+		System.out.println(hello.substring(7, hello.length()-1));
 		
 		System.out.println("---\n---");
 		
-		String hello2 = "   Hello, world!  ";
-		System.out.println(hello2.trim());
+		//
+		String hello3 = hello.replace("a", "");
+		hello3 = hello3.replace("e", "");
+		hello3 = hello3.replace("i", "");
+		hello3 = hello3.replace("o", "");
+		hello3 = hello3.replace("u", "");
+		System.out.println(hello.length() - hello3.length());
+		
+		System.out.println("---\n---");
+		
+		System.out.println( myExtract("Java", 2));
+	}
+	
+	public static char myExtract(String str, int index) {
+		return str.charAt(index);
 	}
 }
