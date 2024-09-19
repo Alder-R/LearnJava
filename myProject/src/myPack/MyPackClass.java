@@ -27,5 +27,17 @@ public class MyPackClass {
 		Object object = MyPackClass.class;
 		String str7 = String.valueOf(object);
 		System.out.println(str7);
+		
+		System.out.println("---\n---");
+		
+		String hello = "Hello, world!";
+		System.out.println(hello.charAt(5));
+		System.out.println(hello.substring(0, 6));
+		System.out.println(hello.substring(7));
+		
+		System.out.println("---\n---");
+		
+		String hello2 = "   Hello, world!  ";
+		System.out.println(hello2.trim());
 	}
 }
