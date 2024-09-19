@@ -15,5 +15,17 @@ public class MyPackClass {
 		else System.out.println("내용 다름");
 		if (str3.equals(str4)) System.out.println("내용 같음");
 		else System.out.println("내용 다름");
+		
+		System.out.println("---\n---");
+		
+		boolean bool1 = false;
+		String str5 = String.valueOf(bool1);
+		System.out.println(str5);
+		char[] charArr = {'a', 'b', 'c', 'd', 'e'};
+		String str6 = String.valueOf(charArr);
+		System.out.println(str6);
+		Object object = MyPackClass.class;
+		String str7 = String.valueOf(object);
+		System.out.println(str7);
 	}
 }
