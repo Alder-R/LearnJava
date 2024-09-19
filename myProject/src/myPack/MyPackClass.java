@@ -1,7 +1,12 @@
 package myPack;
 
+// java.lang 패키지는 따로 import하지 않아도 사용 가능
+// java.lang.Object 클래스는 모든 자바 클래스의 최상위 클래스: 모든 클래스는 자동으로 Object 클래스를 상속받게 됨
+
 public class MyPackClass {
 	public static void main(String[] args) {
+		
+		// java.lang.String 클래스
 		String str1 = "str";
 		String str2 = "str";
 		String str3 = new String("str");
