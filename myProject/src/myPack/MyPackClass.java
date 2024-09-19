@@ -21,7 +21,7 @@ public class MyPackClass {
 		if (str3.equals(str4)) System.out.println("내용 같음");
 		else System.out.println("내용 다름");
 		
-		System.out.println("---\n---");
+		System.out.println("\n---valueOf()---");
 		
 		boolean bool1 = false;
 		String str5 = String.valueOf(bool1);
@@ -33,12 +33,12 @@ public class MyPackClass {
 		String str7 = String.valueOf(object);
 		System.out.println(str7);
 		
-		System.out.println("---\n---");
+		System.out.println("\n---trim()---");
 		
 		String hello2 = "   Hello, world!  ";
 		System.out.println(hello2.trim());
 		
-		System.out.println("---\n---");
+		System.out.println("\n---charAt(), substring()---");
 		
 		String hello = "Hello, world!";
 		System.out.println(hello.charAt(5));
@@ -46,7 +46,7 @@ public class MyPackClass {
 		System.out.println(hello.substring(7));
 		System.out.println(hello.substring(7, hello.length()-1));		// world 출력
 		
-		System.out.println("---\n---");
+		System.out.println("\n---replace()---");
 		
 		//
 		String hello3 = hello.replace("a", "");
@@ -56,11 +56,11 @@ public class MyPackClass {
 		hello3 = hello3.replace("u", "");
 		System.out.println(hello.length() - hello3.length());		// 모음 개수 출력(3)
 		
-		System.out.println("---\n---");
+		System.out.println("\n---charAt() 2---");
 		
 		System.out.println(myExtract("Java", 2));
 		
-		System.out.println("---\n---");
+		System.out.println("\n---compareTo()---");
 		
 		System.out.println(hello.compareTo("Hello"));
 		System.out.println(hello.compareTo("hello"));
