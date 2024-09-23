@@ -8,6 +8,7 @@ public class StudentExam {
 		Student C = new Student();
 		A.printInfo();
 		B.printInfo();
+		B.Study();
 		C.printInfo();
 	}
 }
@@ -15,6 +16,7 @@ public class StudentExam {
 class Student {
 	String name;
 	int grade;
+	
 	public Student() {}
 	public Student(String name) { 
 		this.name = name; 
@@ -23,7 +25,11 @@ class Student {
 		this.name = name; 
 		this.grade = grade; 
 	}
+	
 	public void printInfo() {
 		System.out.println("학생 이름: " + this.name + "\t학년: " + this.grade);
+	}
+	public void Study() {
+		System.out.println(this.name + ": 공부 중...");
 	}
 }
