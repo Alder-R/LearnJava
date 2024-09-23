@@ -3,6 +3,8 @@ package myTest1;
 import java.awt.*;
 import java.awt.event.*;
 
+// 한글 사용시 VM Arguments에 "-Dfile.encoding=MS949" 입력
+
 public class Test1 extends Frame implements ActionListener{
 	
 	Button btnSave = new Button();
@@ -42,7 +44,7 @@ public class Test1 extends Frame implements ActionListener{
 		add(pnl2, BorderLayout.CENTER);
 		add(pnl3, BorderLayout.SOUTH);
 		
-		Label lblName = new Label("이  름");		// 한글 사용시 VM Arguments에 "-Dfile.encoding=MS949" 입력
+		Label lblName = new Label("이  름");
 		Label lblBirth = new Label("생  일:");
 		Label lblMonth = new Label("월");
 		Label lblDay = new Label("일");
