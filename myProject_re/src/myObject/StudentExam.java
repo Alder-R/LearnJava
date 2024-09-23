@@ -7,9 +7,11 @@ public class StudentExam {
 		Student B = new Student("BBB", 2);
 		Student C = new Student();
 		A.printInfo();
+		System.out.println(A.name);
 		B.printInfo();
 		B.Study();
 		C.printInfo();
+		System.out.println(C.name);
 	}
 }
 
