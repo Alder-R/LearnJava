@@ -15,6 +15,16 @@ public class MyStringBuffer {
 		
 		StringBuffer sb3 = new StringBuffer("Hello, world!");
 		System.out.println(sb3.reverse());
+		System.out.println(sb3.replace(3, 6, "column"));
+		System.out.println(sb3.insert(sb3.length(), "    // insert()"));
+		System.out.println(sb3.delete(16, sb3.length()));
+		String str1 = sb3.toString().toUpperCase();
+		System.out.println(str1);
+		
+		StringBuffer sb4 = new StringBuffer("Guten Morgen!");
+		boolean isAfternoon = true;
+		if (isAfternoon) { sb4.replace(6, sb4.length(), "Tag!"); }
+		System.out.println(sb4);
 	}
 
 }
