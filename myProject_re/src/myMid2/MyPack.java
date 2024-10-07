@@ -9,11 +9,11 @@ public class MyPack extends Frame implements ItemListener, ActionListener{
 	Panel pnl2 = new Panel();
 	TextArea txta1 = new TextArea(7, 15);
 	Choice cho = new Choice();
-	CheckboxGroup g = new CheckboxGroup();
-	Checkbox chk1 = new Checkbox("봄", g, false);
-	Checkbox chk2 = new Checkbox("여름", g, true);
-	Checkbox chk3 = new Checkbox("가을", g, false);
-	Checkbox chk4 = new Checkbox("겨울", g, false);
+	CheckboxGroup grp = new CheckboxGroup();
+	Checkbox chk1 = new Checkbox("봄", grp, false);
+	Checkbox chk2 = new Checkbox("여름", grp, true);
+	Checkbox chk3 = new Checkbox("가을", grp, false);
+	Checkbox chk4 = new Checkbox("겨울", grp, false);
 	Button btnClose = new Button("닫기");
 	Button btnClear = new Button("초기화");
 	
