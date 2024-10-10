@@ -14,7 +14,7 @@ public class Test3 {
 
 	public static void main(String[] args) {
 		Test3 jin = new Test3();
-		jin.name = "진길동";
+		jin.name = "진ㅇㅇ";
 		jin.hakbun = "10101";
 		jin.startStudy();
 		jin.startEat();
