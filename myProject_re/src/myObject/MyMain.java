@@ -28,8 +28,8 @@ class Airplane {
 
 class Heli extends Airplane {
 	public Heli() {
-		super.name = "헬기";
-		super.color = "파란색";
+		name = "헬기";
+		color = "파란색";
 	}
 
 	
@@ -76,8 +76,8 @@ class Heli extends Airplane {
 
 class Airliner extends Airplane {
 	public Airliner() {
-		super.name = "여객기";
-		super.color = "하얀색";
+		name = "여객기";
+		color = "하얀색";
 	}
 	int maxPassenger;
 	void SetPassenger(int i) { 

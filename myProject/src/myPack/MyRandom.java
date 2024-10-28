@@ -1,11 +1,10 @@
-package myTest1;
+package myPack;
 
 import java.util.Scanner;
 
-// myProject.myPack.MyRandom에 업데이트판 있음
-public class UpDown {
-	
-	static int chance = 5;
+public class MyRandom {
+
+	static int chance = 5;		// 주어지는 기회, 값 수정 가능
 
 	static void upDownGame() {
 		int randomNum = (int)(Math.random()*100);
@@ -16,7 +15,7 @@ public class UpDown {
 		for (int tryNum = 1; chance != 0; tryNum++) {
 			if (chance+1 == tryNum) {
 				System.out.println("\n***** 정답을 맞추지 못했습니다. *****\n"
-						+chance+"회의 기회를 모두 소진하였습니다. "+"정답은 "+randomNum+"이었습니다.\n"
+						+chance+"회의 기회를 모두 소진하였습니다. "+"정답은 \""+randomNum+"\"이었습니다.\n"
 						+ "게임을 다시 시작합니다.");
 				upDownGame();
 			}
@@ -26,11 +25,11 @@ public class UpDown {
 				System.out.print("게임을 종료합니다.");
 				System.exit(0); 
 				}
-			else if (inputNum > randomNum) { System.out.println("너무 큽니다.("+tryNum+"회)"); } 
-			else if (inputNum < randomNum) { System.out.println("너무 작습니다.("+tryNum+"회)"); } 
+			else if (inputNum > randomNum) { System.out.println("너무 큽니다. ("+tryNum+"/"+chance+"회)"); } 
+			else if (inputNum < randomNum) { System.out.println("너무 작습니다. ("+tryNum+"/"+chance+"회)"); } 
 			else if (inputNum == randomNum) { 
 				System.out.println("\n***** 축하합니다. *****\n"
-						+ "정답은 "+randomNum+"이었습니다. "+chance+"회의 기회 중 "+tryNum+"회만에 정답을 맞추었습니다.\n"
+						+ "정답은 \""+randomNum+"\"이었습니다. "+chance+"회의 기회 중 "+tryNum+"회만에 정답을 맞추었습니다.\n"
 						+ "게임을 다시 시작합니다."); 
 				upDownGame();
 				}
