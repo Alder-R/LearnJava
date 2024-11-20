@@ -14,6 +14,15 @@ public class Circle {
 		
 		System.out.println();
 		
+		Cylinder cy = new Cylinder(10, 2);
+		System.out.println("원기둥의 원의 반지름: " + cy.radius);
+		System.out.println("원기둥의 원의 면적: " + cy.getArea());
+		System.out.println("원기둥의 원의 둘레: " + cy.getCircum());
+		System.out.println("원기둥의 부피: " + cy.getVolume());
+		System.out.println("원기둥의 겉넓이: " + cy.getSurfaceArea());
+		
+		System.out.println();
+		
 		Square r = new Square(5);
 		System.out.println("정사각형의 한 변: " + r.edge);
 		System.out.println("정사각형의 면적: " + r.getArea());
@@ -34,6 +43,21 @@ class Circle2 extends ShapeExam {
 	@Override
 	public double getCircum() {		// 원의 둘레
 		return Math.PI * 2 * radius;
+	}
+}
+
+class Cylinder extends Circle2 {
+	double height;
+	public Cylinder(double radius, double height) {
+		super(radius);
+		this.height = height;
+	}
+	public double getVolume() {		// 원기둥의 부피
+		return getArea() * height;
+	}
+	
+	public double getSurfaceArea() {		// 원기둥의 겉넓이
+		return getCircum() * (radius + height);
 	}
 }
 
